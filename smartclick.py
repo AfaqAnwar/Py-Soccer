@@ -34,7 +34,7 @@ def play(x_pos, y_pos, width, height):
 
     # Factor which the image is scaled down by.
     # Lower tends to be faster but is also inaccurate at times.
-    # A good factor is dependent upon the scale of the game.
+    # A good factor is dependent upon the scale of the game. Larger Original Window = Smaller Scale Factor.
     resize_factor = 0.08
 
     re_width = int(width * resize_factor)
