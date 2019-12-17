@@ -2,8 +2,8 @@ import capture
 import cv2
 import win32api
 import win32con
-import msvcrt
 """
+The Brain of the "AI".
 @Author Afaq Anwar
 @Version 12/17/2019
 """
@@ -28,17 +28,20 @@ Plays the game.
 """
 def play(x_pos, y_pos, width, height):
     # Tolerances for the black on the soccer ball. Increase or decrease based on pixel density.
-    r_threshold = 120
-    g_threshold = 120
-    b_threshold = 120
+    r_threshold = 95
+    g_threshold = 95
+    b_threshold = 95
 
-    # Default down-scale factor is 0.05, this is for performance. If accuracy is compromised alter this.
-    resize_factor = 0.0825
+    # Factor which the image is scaled down by.
+    # Lower tends to be faster but is also inaccurate at times.
+    # A good factor is dependent upon the scale of the game.
+    resize_factor = 0.08
+
+    re_width = int(width * resize_factor)
+    re_height = int(height * resize_factor)
 
     while True:
         game = capture.screenshot((x_pos, y_pos, width, height))
-        re_width = int(width * resize_factor)
-        re_height = int(height * resize_factor)
         game = cv2.resize(game, (re_width, re_height))
 
         clicked = False
@@ -51,6 +54,3 @@ def play(x_pos, y_pos, width, height):
                     break
             if clicked:
                 break
-
-        if msvcrt.kbhit():
-            break

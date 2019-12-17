@@ -1,6 +1,7 @@
 import smartclick
 import win32gui
 """
+Runs the "AI" that can play the Soccer Messenger game.
 @Author Afaq Anwar
 @Version 12/17/2019
 """
