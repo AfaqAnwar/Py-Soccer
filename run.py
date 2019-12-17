@@ -26,7 +26,3 @@ if emulator_window != ():
     height = emulator_window[3]
     # Modify to only allow opencv to see the game and nothing else.
     smartclick.play(x_pos, y_pos + 65, width - x_pos - 42, height - y_pos - 68)
-
-
-
-
