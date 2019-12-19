@@ -2,6 +2,7 @@ import capture
 import cv2
 import win32api
 import win32con
+import numpy as np
 """
 The Brain of the "AI".
 @Author Afaq Anwar
@@ -28,9 +29,9 @@ Plays the game.
 """
 def play(x_pos, y_pos, width, height):
     # Tolerances for the black on the soccer ball. Increase or decrease based on pixel density.
-    r_threshold = 95
-    g_threshold = 95
-    b_threshold = 95
+    r_threshold = 90
+    g_threshold = 90
+    b_threshold = 90
 
     # Factor which the image is scaled down by.
     # Lower tends to be faster but is also inaccurate at times.
@@ -40,17 +41,15 @@ def play(x_pos, y_pos, width, height):
     re_width = int(width * resize_factor)
     re_height = int(height * resize_factor)
 
+    lower = np.array([0, 0, 0])
+    upper = np.array([r_threshold, g_threshold, b_threshold])
+
     while True:
         game = capture.screenshot((x_pos, y_pos, width, height))
-        game = cv2.resize(game, (re_width, re_height))
-
-        clicked = False
-        for i in range(re_height):
-            for j in range(re_width):
-                color_values = game[i][j]
-                if color_values[0] <= r_threshold and color_values[1] <= b_threshold and color_values[2] <= g_threshold:
-                    click(int((j / resize_factor) + x_pos), int((i / resize_factor) + y_pos))
-                    clicked = True
-                    break
-            if clicked:
-                break
+        mask = cv2.inRange(game, lower, upper)
+        masked_game = cv2.bitwise_and(game, game, mask=mask)
+        final_game = cv2.resize(masked_game, (re_width, re_height))
+        white_pixels = np.array(np.where(final_game > 0))
+        if len(white_pixels[0]) > 0:
+            first_white_pixel = white_pixels[:, 0]
+            click(int(first_white_pixel[1] / resize_factor) + x_pos, int(first_white_pixel[0] / resize_factor) + y_pos)
