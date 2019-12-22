@@ -3,6 +3,7 @@ import cv2
 import win32api
 import win32con
 import numpy as np
+import time
 """
 The Brain of the "AI".
 @Author Afaq Anwar
@@ -28,7 +29,7 @@ Plays the game.
 @param height: height of window.
 """
 def play(x_pos, y_pos, width, height):
-    # Tolerances for the black on the soccer ball. Increase or decrease based on pixel density.
+    # Upper limit of ranges to not black out.
     r_threshold = 90
     g_threshold = 90
     b_threshold = 90
@@ -36,7 +37,7 @@ def play(x_pos, y_pos, width, height):
     # Factor which the image is scaled down by.
     # Lower tends to be faster but is also inaccurate at times.
     # A good factor is dependent upon the scale of the game. Larger Original Window = Smaller Scale Factor.
-    resize_factor = 0.08
+    resize_factor = 0.5
 
     re_width = int(width * resize_factor)
     re_height = int(height * resize_factor)

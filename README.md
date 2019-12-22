@@ -1,4 +1,4 @@
 # Py-Soccer-AI
-An "AI" that can play the Soccer Messenger game!
+An "AI" (sort-of) that can play the Soccer Messenger game!
 
-_Write Up Coming Soon!_
+_Short write up coming soon!_
