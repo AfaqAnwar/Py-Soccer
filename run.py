@@ -3,7 +3,7 @@ import win32gui
 """
 Runs the "AI" that can play the Soccer Messenger game.
 @Author Afaq Anwar
-@Version 12/17/2019
+@Version 12/22/2019
 """
 emulator_name = "MEmu"
 emulator_window = ()
