@@ -14,10 +14,7 @@ An "AI" (sort-of) that I made when I was bored that can play the Soccer Messenge
 
 _The speed is an issue which is dependent upon the resize factor. If we were to process the full game image it could be very precise but would take way too long to actually find and click the proper pixel due to the rapid nature of the game._
 
-#### Running Script Locally
-
-
-## Hosting Locally
+## Running Script Locally
 
 ### Requirements for Hosting Locally
 I recommend you install Anaconda and create a virtual Python environment, this is the simplest and cleanest way to get any python project with requirements running locally.
