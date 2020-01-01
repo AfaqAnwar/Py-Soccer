@@ -16,7 +16,7 @@ _The speed is an issue which is dependent upon the resize factor. If we were to 
 
 ## Running Script Locally
 
-### Requirements for Hosting Locally
+### Requirements
 I recommend you install Anaconda and create a virtual Python environment, this is the simplest and cleanest way to get any python project with requirements running locally.
 
 [Anaconda Documentation](https://docs.anaconda.com/anaconda/)
