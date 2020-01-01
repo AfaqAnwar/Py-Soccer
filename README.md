@@ -15,7 +15,7 @@ An "AI" (sort-of) that I made when I was bored which can play the Soccer Messeng
 _The speed is an issue which is dependent upon the resize factor. If the program were to process the full game image it could be very precise but would take way too long to actually find and click the proper pixel due to the rapid nature of the game._
 
 ### AI in Action!
-![AI in Action!](https://s5.gifyu.com/images/bot.gif)
+![AI in Action!](https://i.imgur.com/T3CgQrp.gif)
 
 ## Running Script Locally
 
