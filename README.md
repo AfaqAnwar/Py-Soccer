@@ -5,12 +5,12 @@ An "AI" (sort-of) that I made when I was bored which can play the Soccer Messeng
 * Capture game screen.
 * Convert to the specified range of rgb color.
 * Downscale it by a resize factor.
-* Find the soccer ball (first pixel with a color value that is > 0)
+* Find the soccer ball (first pixel with a color value that is > 0).
 * Move mouse and click it.
 
 ### Flaws
-* Inaccuracy dependent upon resize factor.
-* Speed.
+* Inaccurate (dependent upon resize factor)
+* Speed
 
 _The speed is an issue which is dependent upon the resize factor. If the program were to process the full game image it could be very precise but would take way too long to actually find and click the proper pixel due to the rapid nature of the game._
 
