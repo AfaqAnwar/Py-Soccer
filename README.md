@@ -50,6 +50,8 @@ I also reccomend finding a trustable Android emulator, the one I used was [MEmu]
   
   *  Edit ```Py-Soccer-AI/run.py``` to view the game only with no extra ui elements if using a different emulator other than MEmu.
   
-  3. Run run.py 
+  *  Modify ```Py-Soccer-AI/run.py``` with any parameters you deem neccesary for your emulator.
+  
+  3. Run ```Py-Soccer-AI/run.py```
  
 #### Warning: Since this is an experimental project, I have not implemented a fail safe. In the event your mouse is uncontrollable, a system restart may be required. This is a quick fix, but I have no plans on advancing this project further.
