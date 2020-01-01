@@ -50,7 +50,7 @@ I also reccomend finding a trustable Android emulator, the one I used was [MEmu]
   
   *  Edit ```Py-Soccer-AI/run.py``` to view the game only with no extra ui elements if using a different emulator other than MEmu.
   
-  *  Modify ```Py-Soccer-AI/run.py``` with any parameters you deem neccesary for your emulator.
+  *  Modify ```Py-Soccer-AI/run.py``` with any parameters you deem neccesary for your emulator if using a different emulator other than MEmu.
   
   3. Run ```Py-Soccer-AI/run.py```
  
