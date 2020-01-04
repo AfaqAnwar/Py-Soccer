@@ -2,11 +2,11 @@
 An "AI" (sort-of) that I made when I was bored which can play the Soccer Messenger game!
 
 ## The Method
-* Capture game screen.
-* Convert to the specified range of rgb color.
-* Downscale it by a resize factor.
-* Find the soccer ball (first pixel with a color value that is > 0).
-* Move mouse and click it.
+* Capture image of game screen.
+* Convert image to be within the specified range of rgb color.
+* Downscale the image by a resize factor.
+* Find the soccer ball within the image (first pixel with a color value that is > 0).
+* Move mouse to the pixel position that was found and click it (touch it).
 
 ### Flaws
 * Inaccurate (dependent upon resize factor)
@@ -54,4 +54,4 @@ I also reccomend finding a trustable Android emulator, the one I used was [MEmu]
   
   3. Run ```Py-Soccer-AI/run.py```
  
-#### Warning: Since this is an experimental project, I have not implemented a fail safe. In the event your mouse is uncontrollable, a system restart may be required. This is a quick fix, but I have no plans on advancing this project further.
+#### Warning: Since this is an experimental project, I have not implemented a fail safe. This was never meant to be a finished or polished product. I was just having some fun with OpenCV and Python.  In the event you run this and your mouse is uncontrollable, a system restart may be required. This is a quick fix, but I have no plans on advancing this project further.
