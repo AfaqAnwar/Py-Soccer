@@ -1,5 +1,5 @@
-# Py-Soccer-AI
-An "AI" (sort-of) that I made when I was bored which can play the Soccer Messenger game!
+# Py-Soccer-Bot
+A Python bot that uses computer vision to locate and click the ball of the popular Facebook Messenger Soccer game.
 
 ## The Method
 * Capture image of game screen.
