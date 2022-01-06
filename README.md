@@ -54,4 +54,4 @@ I also reccomend finding a trustable Android emulator, the one I used was [MEmu]
   
   3. Run ```Py-Soccer-Bot/run.py```
  
-#### Warning: Since this is an experimental project, I have not implemented a fail safe. This was never meant to be a finished or polished product. I was just having some fun with OpenCV and Python.  In the event you run this and your mouse is uncontrollable, a system restart may be required. This is a quick fix, but I have no plans on advancing this project further.
+#### Warning: Since this is an experimental project, I have not implemented a fail safe. This was never meant to be a finished or polished product. I was just experimenting with OpenCV and Python. In the event you run this and your mouse is uncontrollable, a system restart may be required. This is a quick fix, but I have no plans on advancing this project further.
