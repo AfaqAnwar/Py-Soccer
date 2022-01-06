@@ -14,8 +14,8 @@ A Python bot that uses computer vision to locate and click the ball of the popul
 
 _The speed is an issue which is dependent upon the resize factor. If the program were to process the full game image it could be very precise but would take way too long to actually find and click the proper pixel due to the rapid nature of the game._
 
-### AI in Action!
-![AI in Action!](https://i.imgur.com/T3CgQrp.gif)
+### Bot in Action!
+![Bot in Action!](https://i.imgur.com/T3CgQrp.gif)
 
 ## Running Script Locally
 
@@ -46,12 +46,12 @@ I also reccomend finding a trustable Android emulator, the one I used was [MEmu]
 ### Steps
   1. Clone this repository onto your local machine.
   
-  2. Edit ```Py-Soccer-AI/run.py``` to include the window name of your emulator. Default is MEmu.
+  2. Edit ```Py-Soccer-Bot/run.py``` to include the window name of your emulator. Default is MEmu.
   
-  *  Edit ```Py-Soccer-AI/run.py``` to view the game only with no extra ui elements if using a different emulator other than MEmu.
+  *  Edit ```Py-Soccer-Bot/run.py``` to view the game only with no extra ui elements if using a different emulator other than MEmu.
   
-  *  Modify ```Py-Soccer-AI/run.py``` with any parameters you deem neccesary for your emulator if using a different emulator other than MEmu.
+  *  Modify ```Py-Soccer-Bot/run.py``` with any parameters you deem neccesary for your emulator if using a different emulator other than MEmu.
   
-  3. Run ```Py-Soccer-AI/run.py```
+  3. Run ```Py-Soccer-Bot/run.py```
  
 #### Warning: Since this is an experimental project, I have not implemented a fail safe. This was never meant to be a finished or polished product. I was just having some fun with OpenCV and Python.  In the event you run this and your mouse is uncontrollable, a system restart may be required. This is a quick fix, but I have no plans on advancing this project further.
